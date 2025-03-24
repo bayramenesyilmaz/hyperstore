@@ -34,7 +34,6 @@ export default function ProductDetail({ product }) {
       },
     });
   };
-  console.log(product);
 
   return (
     <div className="lg:w-10/12 mx-auto flex flex-col md:flex-row gap-8 p-6 md:p-12">

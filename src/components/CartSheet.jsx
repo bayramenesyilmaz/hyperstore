@@ -13,7 +13,6 @@ import {
   SheetFooter,
 } from "@/components/ui/sheet";
 import { clearCart, hydrateCart } from "@/store/cartSlice";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import CartItem from "./CartItem";
 import { useRouter } from "next/navigation";

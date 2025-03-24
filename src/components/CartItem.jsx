@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { useDispatch } from "react-redux";
@@ -24,8 +23,6 @@ export default function CartItem({ item, handleNavigate }) {
   };
 
   const onNavigate = (path) => {
-    // setOpen(false);
-    // router.push(path);
     handleNavigate(path);
   };
 

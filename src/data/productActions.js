@@ -1,4 +1,3 @@
-// Ürünleri API'den çekme fonksiyonu
 export const fetchProducts = async () => {
   try {
     const response = await fetch("https://fakestoreapi.com/products");
@@ -13,13 +12,11 @@ export const fetchProducts = async () => {
   }
 };
 
-// Kategoriye göre filtreleme fonksiyonu
 export const filterProductsByCategory = (products, category) => {
-  if (category === "all") return products; // Tüm ürünler için
+  if (category === "all") return products; 
   return products.filter((product) => product.category === category);
 };
 
-// Bir ürün ID'sine göre ürünü getirme fonksiyonu
 export const getProductById = async (id) => {
   try {
     const response = await fetch(`https://fakestoreapi.com/products/${id}`);

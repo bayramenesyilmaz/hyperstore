@@ -1,5 +1,3 @@
-"use client";
-
 import ThemeToggle from "./ThemeToggle";
 import CartSheet from "./CartSheet";
 import Link from "next/link";
