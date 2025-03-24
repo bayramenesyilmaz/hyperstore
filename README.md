@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ Hyper Store
 
-## Getting Started
+React, Next.js ve modern UI bileşenleri kullanılarak geliştirilen, kullanıcı dostu ve SEO uyumlu bir e-ticaret uygulaması.
 
-First, run the development server:
+## 🚀 Proje Hakkında
+
+Bu proje, [FakeStore API](https://fakestoreapi.com/docs) kullanılarak ürün listeleme, sepet yönetimi ve ödeme işlemlerini kapsayan bir e-ticaret uygulamasıdır.
+
+## 🌐 Canlı Demo
+
+[Hyper Store - Canlı Görüntüle](https://hyper-store.vercel.app)
+
+## 📚 Teknolojiler
+
+- Next.js (App Router)
+- React & Redux Toolkit
+- Tailwind CSS
+- Shadcn/UI
+- FakeStore API
+
+
+### 🔥 Özellikler
+
+- **Ürün Listeleme**: API'den çekilen ürünler ana sayfada listelenir. Her ürün için görsel, başlık, fiyat ve "Sepete Ekle" butonu bulunur.
+- **Ürün Detayı**: Ürün kartına tıklanarak detay sayfasına gidilir. Detay sayfasında ürünün açıklaması, fiyatı ve adet seçimi yapılarak sepete ekleme işlemi yapılabilir.
+- **Sepet Yönetimi**: Sepete eklenen ürünler Sheet (yan panel) bileşeniyle her sayfada görüntülenebilir. Kullanıcı ürünleri silebilir veya tüm sepeti temizleyebilir.
+- **Checkout ve Ödeme Süreci**:
+  - Sepetteki ürünler checkout sayfasında listelenir.
+  - Kullanıcılar kredi kartı veya kapıda ödeme seçeneğiyle ödeme yapabilir.
+  - Kredi kartı seçildiğinde, sahte bir SMS doğrulama kodu gönderilir. Doğru kod girildiğinde "Sipariş alındı" bildirimi gösterilir.
+- **Durum Yönetimi**: Sepet ve ödeme süreci Redux Toolkit kullanılarak yönetilir. Sepet verileri `localStorage` kullanılarak kalıcı hale getirilir.
+- **Tema Desteği**: Açık/Koyu tema geçişi yapılabilir.
+- **Lazy Loading & Code Splitting**: Suspense ve React.lazy() kullanılarak bileşenler dinamik olarak yüklenir. Ayrıca, hata yönetimi için özel NotFound ve Error sayfaları tasarlandı.
+- **SEO Optimizasyonu**: Her sayfaya özel meta etiketleri eklenmiştir.
+- **Responsive Tasarım**: Tüm cihazlarda uyumlu olacak şekilde `Tailwind CSS` kullanılarak tasarlandı.
+
+## 📸 Proje Görselleri
+
+![Ana Sayfa](./public/screenshots/homepage.png)
+![Ürün Detay](./public/screenshots/product-detail.png)
+![Sepet](./public/screenshots/cart.png)
+![Ödeme](./public/screenshots/checkout.png)
+
+## 📦 Kurulum ve Çalıştırma
+
+Projeyi yerel ortamınıza kurmak ve çalıştırmak için aşağıdaki adımları izleyin:
 
 ```bash
+# Depoyu klonla
+git clone https://github.com/kullaniciadi/hyper-store.git
+cd hyper-store
+
+# Bağımlılıkları yükle
+npm install
+
+# Geliştirme sunucusunu başlat
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini ziyaret ederek projeyi görüntüleyebilirsiniz.
