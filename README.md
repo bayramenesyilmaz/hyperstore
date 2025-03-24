@@ -8,7 +8,7 @@ Bu proje, [FakeStore API](https://fakestoreapi.com/docs) kullanılarak ürün li
 
 ## 🌐 Canlı Demo
 
-[Hyper Store - Canlı Görüntüle](https://hyper-store.vercel.app)
+[Hyper Store - Canlı Görüntüle](https://hyperstore.vercel.app)
 
 ## 📚 Teknolojiler
 
