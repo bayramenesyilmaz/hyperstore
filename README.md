@@ -47,7 +47,7 @@ Projeyi yerel ortamınıza kurmak ve çalıştırmak için aşağıdaki adımlar
 
 ```bash
 # Depoyu klonla
-git clone https://github.com/kullaniciadi/hyper-store.git
+git clone https://github.com/bayramenesyilmaz/hyperstore.git
 cd hyper-store
 
 # Bağımlılıkları yükle
