@@ -48,7 +48,7 @@ Projeyi yerel ortamınıza kurmak ve çalıştırmak için aşağıdaki adımlar
 ```bash
 # Depoyu klonla
 git clone https://github.com/bayramenesyilmaz/hyperstore.git
-cd hyper-store
+cd hyperstore
 
 # Bağımlılıkları yükle
 npm install
